@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f;
+    public float laneSpeed = 2.0f;
     public float jumpForce = 1.5f;
     public float gravity = -9.81f;
     public float slideDuration = 2f;
@@ -39,14 +40,14 @@ public class PlayerController : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
-        // Debug.Log("isGrounded: " + isGrounded);
     }
 
     void Move()
     {
         isGrounded = controller.isGrounded;
-        Vector3 move = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+        animator.SetBool("IsGrounded", isGrounded);
+
+        Vector3 move = transform.right * Input.GetAxis("Horizontal") * laneSpeed + transform.forward;
         controller.Move(speed * Time.deltaTime * move);
 
         // Animation
@@ -63,7 +64,6 @@ public class PlayerController : MonoBehaviour
         }
         else {
             animator.SetBool("IsJumping", false);
-            // Debug.Log("Animator.IsJumping: " + animator.GetBool("IsJumping"));
         }
     }
 
