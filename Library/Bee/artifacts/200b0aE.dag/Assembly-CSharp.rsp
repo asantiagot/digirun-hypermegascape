@@ -367,6 +367,7 @@
 "Assets/Scripts/Obstacle.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScoreManager.cs"
+"Assets/Starfield Skybox/Demo/Script/LookCamera.cs"
 -langversion:9.0
 
 /deterministic

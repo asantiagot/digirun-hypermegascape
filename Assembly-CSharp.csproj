@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Obstacle.cs" />
+    <Compile Include="Assets/Starfield Skybox/Demo/Script/LookCamera.cs" />
     <Compile Include="Assets/Scripts/LightStripFollower.cs" />
     <Compile Include="Assets/Scripts/ScoreManager.cs" />
     <Compile Include="Assets/Scripts/LightStrip.cs" />
