@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("hit object " + other.tag);
         if (other.CompareTag("Obstacle"))
         {
-            HealthManager.instance.TakeDamage(HealthManager.instance.maxHealth * 0.10f);
+            StartCoroutine(HandleCrash());
         }
         else if (other.CompareTag("Collectible10PTS"))
         {
@@ -126,5 +126,13 @@ public class PlayerController : MonoBehaviour
             ScoreManager.instance.AddScore(20);
             Destroy(other.gameObject);
         }
+    }
+
+    private IEnumerator HandleCrash()
+    {
+        HealthManager.instance.TakeDamage(HealthManager.instance.maxHealth * 0.10f);
+        animator.SetBool("IsCrashing", true);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        animator.SetBool("IsCrashing", false);
     }
 }

@@ -599,3 +599,218 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16b37f000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.213 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.357 seconds
+Domain Reload Profiling: 570ms
+	BeginReloadAssembly (75ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (100ms)
+		LoadAssemblies (119ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (357ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (184ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (137ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3455 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (105.8 KB). Loaded Objects now: 3978.
+Memory consumption went from 192.0 MB to 191.9 MB.
+Total: 2.237042 ms (FindLiveObjects: 0.118958 ms CreateObjectMapping: 0.055291 ms MarkObjects: 1.974709 ms  DeleteObjects: 0.087375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 649.582762 seconds.
+  path: Assets/Sci-Fi Styled Modular Pack/Models/console.fbx
+  artifactKey: Guid(7d22befb952c070459bc8f06ba0a5f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi Styled Modular Pack/Models/console.fbx using Guid(7d22befb952c070459bc8f06ba0a5f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69b79328601ccae9efb27fca47a602d') in 0.051521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sci-Fi Styled Modular Pack/Models/console_celing.fbx
+  artifactKey: Guid(a6a5e0bb41ac5234fb1d67dd58baab40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci-Fi Styled Modular Pack/Models/console_celing.fbx using Guid(a6a5e0bb41ac5234fb1d67dd58baab40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39cd5d1a215cce9e2dca7b37a7081e9a') in 0.005364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 14.983221 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Retro_Venus_Artfbx.prefab
+  artifactKey: Guid(e71c1c5a3c8faa9459030a70050e28ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Retro_Venus_Artfbx.prefab using Guid(e71c1c5a3c8faa9459030a70050e28ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd898fa1583391a8a1a170d560e77e9') in 0.009125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Old_Art.prefab
+  artifactKey: Guid(45b0adb51dd054d4b9596630f9b2df18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Old_Art.prefab using Guid(45b0adb51dd054d4b9596630f9b2df18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f227c6c700865d22e79450f344d946c5') in 0.049284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Neon_02_Art.prefab
+  artifactKey: Guid(d5d3171f46e17ce4fa4eae60c6e86e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Neon_02_Art.prefab using Guid(d5d3171f46e17ce4fa4eae60c6e86e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf61e8433a58c5c0e6e386a448581ed2') in 0.003369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_01_Art.prefab
+  artifactKey: Guid(3036077132a4b0940957da2b41fe5beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_01_Art.prefab using Guid(3036077132a4b0940957da2b41fe5beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d217e61d3a7de6bd043797ad3d87d8') in 0.008699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_03_Art.prefab
+  artifactKey: Guid(60566642318368246b50a3e662e19e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_03_Art.prefab using Guid(60566642318368246b50a3e662e19e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f34c98f660bc83859868aa6cf379490') in 0.003754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Column_01_Art.prefab
+  artifactKey: Guid(b1d7c0f6dae1eea4cb2f93eb612dc3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Column_01_Art.prefab using Guid(b1d7c0f6dae1eea4cb2f93eb612dc3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b412fce15fab83de606efd9ade3fbe47') in 0.005720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Column_03_Art.prefab
+  artifactKey: Guid(f5c6121ebc98af440a1a3064ddcb31d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Column_03_Art.prefab using Guid(f5c6121ebc98af440a1a3064ddcb31d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc54b3d9826163df893b55de1aac6e69') in 0.003971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Terrain_Art.prefab
+  artifactKey: Guid(9fe4dfa1afd443c45a9ff32e1e973113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Terrain_Art.prefab using Guid(9fe4dfa1afd443c45a9ff32e1e973113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a34a77fc9ac889e5255efea7599e1b0') in 0.004464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Neon_01_Art.prefab
+  artifactKey: Guid(2d44264e455ae334184e08b6851f9f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Neon_01_Art.prefab using Guid(2d44264e455ae334184e08b6851f9f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8840a60d2d0f80a6e3f9862df684ec3c') in 0.003784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Neon_03_Art.prefab
+  artifactKey: Guid(b8eb27a1693b9be499f9dbd200746b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Frame_Neon_03_Art.prefab using Guid(b8eb27a1693b9be499f9dbd200746b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b15105b0c85884aaf62c3d5aa1223e') in 0.003189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Venus_01_Floating_Art.prefab
+  artifactKey: Guid(5a9cc85f73e46834ba612015bae321e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Venus_01_Floating_Art.prefab using Guid(5a9cc85f73e46834ba612015bae321e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb9d86736ae3c8171544d19b5240092') in 0.006315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_02_Art.prefab
+  artifactKey: Guid(646e50046068cb24ea63d2c95732a1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_02_Art.prefab using Guid(646e50046068cb24ea63d2c95732a1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f0ca7226bc4f12ee6194457b9b15fb') in 0.003969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_05_Art.prefab
+  artifactKey: Guid(eb8261890d0417944a4ce0ce4f6ecdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_05_Art.prefab using Guid(eb8261890d0417944a4ce0ce4f6ecdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de817b35f5d2fae1c963d1b8db560832') in 0.006185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Floor_02_Art.prefab
+  artifactKey: Guid(8a97195bce7b6544f806770b2508ca6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Floor_02_Art.prefab using Guid(8a97195bce7b6544f806770b2508ca6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b13d2c2039dc4c6638b4bda6070aef4') in 0.007339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Floor_01_Art.prefab
+  artifactKey: Guid(4ae45285375f55548bb15a815037feda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Floor_01_Art.prefab using Guid(4ae45285375f55548bb15a815037feda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3bb8a0ade0911527568813f7178fe6e') in 0.025815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_04_Art.prefab
+  artifactKey: Guid(50404f7a0db25fd4685c444bb5a6db25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polygonal Mind/Assets/2302_ChromaticChaosVHSAssetPack/Prefabs/Structure_Vapor_Pot_04_Art.prefab using Guid(50404f7a0db25fd4685c444bb5a6db25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eda5c048833eb738cc4702b929aa43d') in 0.005448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
