@@ -62,9 +62,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 5dba31047b3c3764bb959e4b00c99740, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 60124539230989799}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 5dba31047b3c3764bb959e4b00c99740, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 98990684960975654}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 5dba31047b3c3764bb959e4b00c99740, type: 3}
       insertIndex: -1
@@ -75,18 +72,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5dba31047b3c3764bb959e4b00c99740, type: 3}
   m_PrefabInstance: {fileID: 1691164666834373128}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &60124539230989799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691164666834406568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f716fdc6b491464c87bfab0afd563ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &98990684960975654
 SphereCollider:
   m_ObjectHideFlags: 0

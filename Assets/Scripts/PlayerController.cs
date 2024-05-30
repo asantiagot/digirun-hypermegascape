@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private Animator animator;
+    private HealthManager healthManager;
+    private ScoreManager scoreManager;
     private bool isGrounded;
     private bool isSliding = false;
     private float originalHeight;
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         originalHeight = controller.height;
+        healthManager = GetComponent<HealthManager>();
+        scoreManager = GetComponent<ScoreManager>();
     }
 
     void Update()
@@ -103,5 +107,24 @@ public class PlayerController : MonoBehaviour
         controller.height = originalHeight;
         isSliding = false;
         animator.SetBool("IsSliding", false);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("hit object " + other.tag);
+        if (other.CompareTag("Obstacle"))
+        {
+            HealthManager.instance.TakeDamage(HealthManager.instance.maxHealth * 0.10f);
+        }
+        else if (other.CompareTag("Collectible10PTS"))
+        {
+            ScoreManager.instance.AddScore(10);
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Collectible20PTS"))
+        {
+            ScoreManager.instance.AddScore(20);
+            Destroy(other.gameObject);
+        }
     }
 }
