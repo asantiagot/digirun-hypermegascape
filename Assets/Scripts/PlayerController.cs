@@ -114,7 +114,6 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit object " + other.tag);
         if (other.CompareTag("Obstacle"))
         {
             StartCoroutine(HandleCrash());
