@@ -30,17 +30,17 @@ public class LightStrip : MonoBehaviour
     //     }
     // }
 
-    public Color touchedColor = Color.yellow;
+    // public Color touchedColor = new(255, 110, 4);
+    public Material defaultMaterial;
+    public Material onTouchMaterial;
     public ParticleSystem sparkleEffect;
     private ParticleSystem activeSparkleEffect;
     private Renderer lightStripRenderer;
-    private Color originalColor;
     private bool isPlayerTouching;
 
     void Start()
     {
         lightStripRenderer = GetComponent<Renderer>();
-        originalColor = lightStripRenderer.material.color;
     }
 
     void OnTriggerEnter(Collider other)
@@ -48,7 +48,7 @@ public class LightStrip : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerTouching = true;
-            lightStripRenderer.material.color = touchedColor;
+            lightStripRenderer.material = onTouchMaterial;
 
             if (activeSparkleEffect == null)
             {
@@ -86,7 +86,7 @@ public class LightStrip : MonoBehaviour
                 activeSparkleEffect.Stop();
             }
 
-            lightStripRenderer.material.color = originalColor;
+            lightStripRenderer.material = defaultMaterial;
         }
     }
 }
