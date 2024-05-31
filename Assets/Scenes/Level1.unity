@@ -532,6 +532,8 @@ MonoBehaviour:
   slideDuration: 0.5
   slideHeight: 0.1
   heightTransitionSpeed: 5
+  collectible10PtsSparkleEffectPrefab: {fileID: 1299704263541650875, guid: 315db5372bda341fba506c48b807d6c8, type: 3}
+  collectible20PtsSparkleEffectPrefab: {fileID: 1299704263541650875, guid: f199a2c3ab8bb47648ac0487d14a7cb4, type: 3}
 --- !u!4 &273899786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 93eca5f7330ed495e9c38fe2f8187685, type: 3}
@@ -2027,6 +2029,22 @@ PrefabInstance:
     - target: {fileID: 3278908359437785182, guid: 113380bf045bf49a49c574eb33e82391, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536682480919021407, guid: 113380bf045bf49a49c574eb33e82391, type: 3}
+      propertyPath: m_Size.y
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536682480919021407, guid: 113380bf045bf49a49c574eb33e82391, type: 3}
+      propertyPath: m_Size.z
+      value: 1.1798505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536682480919021407, guid: 113380bf045bf49a49c574eb33e82391, type: 3}
+      propertyPath: m_Center.x
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536682480919021407, guid: 113380bf045bf49a49c574eb33e82391, type: 3}
+      propertyPath: m_Center.z
+      value: 0.011235833
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

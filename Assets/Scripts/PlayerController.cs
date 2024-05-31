@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     private bool isSliding = false;
     private float originalHeight;
 
+    public GameObject collectible10PtsSparkleEffectPrefab;
+    public GameObject collectible20PtsSparkleEffectPrefab;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -119,11 +122,13 @@ public class PlayerController : MonoBehaviour
         else if (other.CompareTag("Collectible10PTS"))
         {
             ScoreManager.instance.AddScore(10);
+            Instantiate(collectible10PtsSparkleEffectPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("Collectible20PTS"))
         {
             ScoreManager.instance.AddScore(20);
+            Instantiate(collectible20PtsSparkleEffectPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
         }
     }
