@@ -70,11 +70,11 @@
     <Compile Include="Assets/Scripts/LightStripFollower.cs" />
     <Compile Include="Assets/Scripts/ScoreManager.cs" />
     <Compile Include="Assets/Scripts/LightStrip.cs" />
+    <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />
     <Compile Include="Assets/Scripts/BeatManager.cs" />
     <Compile Include="Assets/Scripts/AudioManager.cs" />
     <Compile Include="Assets/Scripts/PlayerController.cs" />
-    <Compile Include="Assets/GameManager.cs" />
     <Compile Include="Assets/Scripts/Collectible.cs" />
   </ItemGroup>
   <ItemGroup>
