@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioManager audioManager;
+    private bool gameStarted = false;
     public float speed = 5.0f;
     public float laneSpeed = 2.0f;
     public float jumpForce = 1.5f;
@@ -25,6 +27,12 @@ public class PlayerController : MonoBehaviour
     public GameObject collectible10PtsSparkleEffectPrefab;
     public GameObject collectible20PtsSparkleEffectPrefab;
 
+    public void StartGame()
+    {
+        gameStarted = true;
+        audioManager.Start();
+    }
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -36,17 +44,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Move();
-        HandleJump();
-        HandleSlide();
-
-        if (isGrounded && velocity.y < 0)
+        if (gameStarted)
         {
-            velocity.y = -2f;
-        }
+            Move();
+            HandleJump();
+            HandleSlide();
 
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+            if (isGrounded && velocity.y < 0)
+            {
+                velocity.y = -2f;
+            }
+
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity * Time.deltaTime);
+        }
     }
 
     void Move()
