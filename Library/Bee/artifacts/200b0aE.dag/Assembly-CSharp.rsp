@@ -369,6 +369,7 @@
 "Assets/Scripts/LightStrip.cs"
 "Assets/Scripts/LightStripFollower.cs"
 "Assets/Scripts/MainMenu.cs"
+"Assets/Scripts/NitroBoost.cs"
 "Assets/Scripts/Obstacle.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScoreManager.cs"

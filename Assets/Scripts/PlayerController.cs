@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public AudioManager audioManager;
     private bool gameStarted = false;
-    public float speed = 5.0f;
+    public float defaultSpeed = 5.0f;
+    private float speed;
     public float laneSpeed = 2.0f;
     public float jumpForce = 1.5f;
     public float gravity = -9.81f;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         originalHeight = controller.height;
         healthManager = GetComponent<HealthManager>();
         scoreManager = GetComponent<ScoreManager>();
+        speed = defaultSpeed;
     }
 
     void Update()
@@ -149,5 +151,17 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("IsCrashing", true);
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         animator.SetBool("IsCrashing", false);
+    }
+
+    public void ActivateSpeedBoost(float duration, float multiplier)
+    {
+        StartCoroutine(SpeedBoost(duration, multiplier));
+    }
+
+    private IEnumerator SpeedBoost(float duration, float multiplier)
+    {
+        speed *= multiplier;
+        yield return new WaitForSeconds(duration);
+        speed = defaultSpeed;
     }
 }
