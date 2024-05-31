@@ -361,6 +361,7 @@
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/BeatManager.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/Checkpoint.cs"
 "Assets/Scripts/Collectible.cs"
 "Assets/Scripts/FallDetector.cs"
 "Assets/Scripts/GameManager.cs"
