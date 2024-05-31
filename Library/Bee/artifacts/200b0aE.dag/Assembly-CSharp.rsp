@@ -362,6 +362,7 @@
 "Assets/Scripts/BeatManager.cs"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/Collectible.cs"
+"Assets/Scripts/FallDetector.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HealthManager.cs"
 "Assets/Scripts/LightStrip.cs"
