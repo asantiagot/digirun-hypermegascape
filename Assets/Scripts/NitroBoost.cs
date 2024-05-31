@@ -12,7 +12,6 @@ public class NitroBoost : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             if (playerController != null)
             {
-                Debug.Log("triggering boost speed");
                 playerController.ActivateSpeedBoost(boostDuration, boostMultiplier);
                 // Destroy(gameObject);
             }
