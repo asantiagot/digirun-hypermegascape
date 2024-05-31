@@ -9,7 +9,6 @@ public class NitroBoost : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("hit player");
             PlayerController playerController = other.GetComponent<PlayerController>();
             if (playerController != null)
             {
